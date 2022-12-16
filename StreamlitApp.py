@@ -62,7 +62,7 @@ data = {"As a (role)": ['Sales Manager', 'Sales Representative', 'Sales Represen
          "Acceptance Criteria": ['A Power BI dashboard which updates data once a day', 'A Power BI dashboard which allows me to filter data for each customer', 'A Power BI dashboard which allows me to filter data for each Product', 'A Power Bi dashboard with graphs and KPIs comparing against budget.']}
 
 df = pd.DataFrame(data)
-st.dataframe(df)
+st.table(df)
                    
 
     

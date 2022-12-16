@@ -47,7 +47,7 @@ st.markdown(original_title, unsafe_allow_html=True)
 
 
 st.markdown("This is a project of **Nguyen Tuan Hung** from **UEL** that aims to create a Power BI dashboard overview of internet sales with graphs and KPIs comparing against budget.")
-st.markdown("In this project, I created SQL query codes on data cleaning and data transformation for the project. You can find all the T-SQL statements below and the exported data that was created based on the SQL statements. In addition, this is the data I used to create dashboards and reports for the project:")        
+st.markdown("In this project, I created some SQL query codes on data cleaning and data transformation for the project. You can find all the T-SQL statements below and the exported data that was created based on the SQL statements. In addition, this is the data I used to create dashboards and reports for the project:")        
 st.markdown("https://github.com/tuanhung1405/Data-Analyst-Portfolio-Project-Sales-Management.git",unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)

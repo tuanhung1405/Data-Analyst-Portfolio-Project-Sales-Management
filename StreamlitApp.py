@@ -1,12 +1,6 @@
 import streamlit as st
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-import ApiGetData
-import ta
-from ArimaModel import ArimaModel
 from io import StringIO
 import sys
-import plotly.express as px
 from PIL import Image
 
 st.set_page_config(page_title='Data Analyst Portfolio Project – Sales Management',page_icon="📶",layout="wide")

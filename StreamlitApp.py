@@ -46,7 +46,7 @@ original_title='<p style="text-align: center; color:#3498DB; text-shadow: 2px 2p
 st.markdown(original_title, unsafe_allow_html=True)
 
 
-st.markdown("This is a project of **Nguyen Tuan Hung** from **UEL** that aims to build a web application to forecast the trend of coin prices using the ARIMA model. The data was crawled from API of Coinbase. You can use the model however you want, but you carry the risk for your actions.")
+st.markdown("This is a project of **Nguyen Tuan Hung** from **UEL** that aims to create a Power BI dashboard overview of internet sales with graphs and KPIs comparing against budget.")
 col1, col2, col3 = st.columns(3)
 
 with col1:

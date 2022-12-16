@@ -63,7 +63,7 @@ with col1:
 with col2:
    st.image("pic1.png")
 
-with col3
+with col3:
    st.image("pic2.png")
 
 

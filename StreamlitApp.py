@@ -54,6 +54,11 @@ st.write('---')
     #period = st.sidebar.selectbox("Choose the period", ("DAY", "1WEEK", "2WEEK", "MONTH"))
     
     # Store the initial value of widgets in session state
+    
+images = ['Sales_Report (3)-1.png', 'Sales_Report (3)-2.png', 'pic1.png', 'pic2.png', 'pic3.png', 'datamodel-1.png']
+st.image(images, use_column_width=True)
+         
+        
 st.header('Business Request & User Stories')
 st.write("The business request for this data analyst project was an executive sales report for sales managers. Based on the request that was made from the business we following user stories were defined to fulfill delivery and ensure that acceptance criteria’s were maintained throughout the project.")
 data = {"As a (role)": ['Sales Manager', 'Sales Representative', 'Sales Representative', 'Sales Manager'],

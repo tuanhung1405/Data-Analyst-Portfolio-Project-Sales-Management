@@ -56,10 +56,10 @@ st.write('---')
     # Store the initial value of widgets in session state
 st.header('Business Request & User Stories')
 st.write("The business request for this data analyst project was an executive sales report for sales managers. Based on the request that was made from the business we following user stories were defined to fulfill delivery and ensure that acceptance criteria’s were maintained throughout the project.")
-data = {'As a (role)': ['Sales Manager', 'Sales Representative', 'Sales Representative', 'Sales Manager'],
-         'I want (request / demand)': ['To get a dashboard overview of internet sales', 'A detailed overview of Internet Sales per Customer', 'A detailed overview of Internet Sales per Products', 'A dashboard overview of internet salesr'],
-         'So that I (user value)': ['Can follow better which customers and products sells the best', 'Can follow up my customers that buys the most and who we can sell more to', 'Can follow up my Products that sells the most', 'Follow sales over time against budgetr'],
-         'Acceptance Criteria': ['A Power BI dashboard which updates data once a day', 'A Power BI dashboard which allows me to filter data for each customer', 'A Power BI dashboard which allows me to filter data for each Product', 'A Power Bi dashboard with graphs and KPIs comparing against budget.']}
+data = {'**As a (role)**': ['Sales Manager', 'Sales Representative', 'Sales Representative', 'Sales Manager'],
+         '**I want (request / demand)**': ['To get a dashboard overview of internet sales', 'A detailed overview of Internet Sales per Customer', 'A detailed overview of Internet Sales per Products', 'A dashboard overview of internet salesr'],
+         '**So that I (user value)**': ['Can follow better which customers and products sells the best', 'Can follow up my customers that buys the most and who we can sell more to', 'Can follow up my Products that sells the most', 'Follow sales over time against budgetr'],
+         '**Acceptance Criteria**': ['A Power BI dashboard which updates data once a day', 'A Power BI dashboard which allows me to filter data for each customer', 'A Power BI dashboard which allows me to filter data for each Product', 'A Power Bi dashboard with graphs and KPIs comparing against budget.']}
 
 df = pd.DataFrame(data)
 st.dataframe(df)

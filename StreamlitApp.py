@@ -244,5 +244,5 @@ st.write("**Click the picture to to open the dashboard and try it out!**")
 
 import streamlit.components.v1 as components
 
-st.components.html("https://app.powerbi.com/links/my5rQKhiQL?ctid=07acb355-56bc-489b-b98c-8fea440460e8&pbi_source=linkShare&bookmarkGuid=3ab7991c-d111-4774-bcbf-e2a4380e2d4f")
+st.markdown("https://app.powerbi.com/links/my5rQKhiQL?ctid=07acb355-56bc-489b-b98c-8fea440460e8&pbi_source=linkShare&bookmarkGuid=3ab7991c-d111-4774-bcbf-e2a4380e2d4f",unsafe_allow_html=True)
     

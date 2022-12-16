@@ -63,6 +63,44 @@ data = {"As a (role)": ['Sales Manager', 'Sales Representative', 'Sales Represen
 
 df = pd.DataFrame(data)
 st.table(df)
+st.write('---')
+
+st.header('Data Cleansing & Transformation (SQL)')
+st.write("""To create the necessary data model for doing analysis and fulfilling the business needs defined in the user stories the following tables were extracted using SQL.
+
+One data source (sales budgets) were provided in Excel format and were connected in the data model in a later step of the process.
+
+Below are the SQL statements for cleansing and transforming necessary data.
+""")
+st.subheader('DIM_Calendar:')
+
+code = '''-- Cleansed DIM_Date Table --
+SELECT 
+  [DateKey], 
+  [FullDateAlternateKey] AS Date, 
+  --[DayNumberOfWeek], 
+  [EnglishDayNameOfWeek] AS Day, 
+  --[SpanishDayNameOfWeek], 
+  --[FrenchDayNameOfWeek], 
+  --[DayNumberOfMonth], 
+  --[DayNumberOfYear], 
+  --[WeekNumberOfYear],
+  [EnglishMonthName] AS Month, 
+  Left([EnglishMonthName], 3) AS MonthShort,   -- Useful for front end date navigation and front end graphs.
+  --[SpanishMonthName], 
+  --[FrenchMonthName], 
+  [MonthNumberOfYear] AS MonthNo, 
+  [CalendarQuarter] AS Quarter, 
+  [CalendarYear] AS Year --[CalendarSemester], 
+  --[FiscalQuarter], 
+  --[FiscalYear], 
+  --[FiscalSemester] 
+FROM 
+ [AdventureWorksDW2019].[dbo].[DimDate]
+WHERE 
+  CalendarYear >= 2019'''
+st.code(code, language='sql')
+
                    
 
     

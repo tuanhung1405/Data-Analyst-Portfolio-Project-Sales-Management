@@ -9,7 +9,8 @@ import sys
 import plotly.express as px
 from PIL import Image
 
-st.set_page_config(page_title='Risk Tolerance Prediction',page_icon="📶",layout="wide")
+st.set_page_config(page_title='Data Analyst Portfolio Project – Sales Management
+',page_icon="📶",layout="wide")
 
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
@@ -46,35 +47,30 @@ div.fullScreenFrame > div {
 </style>""", unsafe_allow_html=True)
 
 #Title
-original_title = '<p style="text-align: center; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 60px;">Crypto-Currency Price Prediction using ARIMA Model</p>'
+original_title='<p style="text-align: center; color:#3498DB; text-shadow: 2px 2px 4px #000000; font-size: 60px;">Data Analyst Portfolio Project – Sales Management</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 
 
 st.markdown("This is a project of **Nguyen Tuan Hung** from **UEL** that aims to build a web application to forecast the trend of coin prices using the ARIMA model. The data was crawled from API of Coinbase. You can use the model however you want, but you carry the risk for your actions.")
 
 st.write('---')
-tup, coinname = ApiGetData.getListCoins()
-
-
 def main():
     #st.sidebar.write("Choose your coin and the period")
     #coins = st.sidebar.selectbox("Which coin", (tup))
     #period = st.sidebar.selectbox("Choose the period", ("DAY", "1WEEK", "2WEEK", "MONTH"))
     
     # Store the initial value of widgets in session state
-    st.header('Choose your coin and period you want')
+    st.header('Business Request & User Stories')
+    st.write("The business request for this data analyst project was an executive sales report for sales managers. Based on the request that was made from the business we following user stories were defined to fulfill delivery and ensure that acceptance criteria’s were maintained throughout the project.")
+    data = {'As a (role)': ['Sales Manager', 'Sales Representative', 'Sales Representative', 'Sales Manager'],
+           'I want (request / demand)': ['To get a dashboard overview of internet sales', 'A detailed overview of Internet Sales per Customer', 'A detailed overview of Internet Sales per Products', 'A dashboard overview of internet salesr'],
+           'So that I (user value)': ['Can follow better which customers and products sells the best', 'Can follow up my customers that buys the most and who we can sell more to', 'Can follow up my Products that sells the most', 'Follow sales over time against budgetr'],
+           'Acceptance Criteria': ['A Power BI dashboard which updates data once a day', 'A Power BI dashboard which allows me to filter data for each customer', 'A Power BI dashboard which allows me to filter data for each Product', 'A Power Bi dashboard with graphs and KPIs comparing against budget.']}
 
-    col1, col2 = st.columns(2)
-
-    with col1:
-      coins = st.selectbox("Which coin", (tup))
-
-    with col2:
-      period = st.selectbox(
-        "Choose the period",
-        ("DAY", "1WEEK", "2WEEK", "MONTH"))
-    
-    st.write("View the data and graph")
+    df = pd.DataFrame(data)
+    st.dataframe(df)
+                   
+                   
     col1, col2 = st.columns(2)
 
     with col1:

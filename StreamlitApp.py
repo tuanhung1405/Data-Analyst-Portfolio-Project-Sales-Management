@@ -56,15 +56,15 @@ st.write('---')
     # Store the initial value of widgets in session state
     
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 with col1:
    st.image("Sales_Report (3)-1.png")
-
 with col2:
    st.image("pic1.png")
-
 with col3:
    st.image("pic2.png")
+with col3:
+   st.image("pic3.png")
 
 
          
@@ -249,15 +249,20 @@ st.header('Data Model')
 st.write("""Below is a screenshot of the data model after cleansed and prepared tables were read into Power BI.
 
 This data model also shows how FACT_Budget hsa been connected to FACT_InternetSales and other necessary DIM tables.""")
+st.image("datamodel-1.png")
 st.write('---')
 
 
 st.header('Sales Management Dashboard')
 st.write("""The finished sales management dashboard with one page with works as a dashboard and overview, with two other pages focused on combining tables for necessary details and visualizations to show sales over time, per customers and per products.""")
-st.write("**Click the picture to to open the dashboard and try it out!**")
+st.write("**Click the link to to open the dashboard and try it out!**")
 
 
 import streamlit.components.v1 as components
 
 st.markdown("https://app.powerbi.com/links/my5rQKhiQL?ctid=07acb355-56bc-489b-b98c-8fea440460e8&pbi_source=linkShare&bookmarkGuid=3ab7991c-d111-4774-bcbf-e2a4380e2d4f",unsafe_allow_html=True)
-    
+col1, col2= st.columns(2)
+with col1:
+  st.image("Sales_Report (3)-1.png")
+with col2:
+  st.image("Sales_Report (3)-2.png")

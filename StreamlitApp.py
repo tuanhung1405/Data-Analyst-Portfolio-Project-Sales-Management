@@ -47,8 +47,9 @@ st.markdown(original_title, unsafe_allow_html=True)
 
 
 st.markdown("This is a project of **Nguyen Tuan Hung** from **UEL** that aims to create a Power BI dashboard overview of internet sales with graphs and KPIs comparing against budget. In addition, I created SQL query examples on data cleaning and data transformation for the project.")
-st.markdown("You can find all the T-SQL statements below and the exported data that was created based on the SQL statements. This is the data I used to create dashboards and reports for the project.")            
-")
+st.markdown("You can find all the T-SQL statements below and the exported data that was created based on the SQL statements. This is the data I used to create dashboards and reports for the project.")        
+st.markdown("https://github.com/tuanhung1405/Data-Analyst-Portfolio-Project-Sales-Management.git",unsafe_allow_html=True)
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -278,6 +279,7 @@ st.write("**Click the link to to open the dashboard and try it out!**")
 import streamlit.components.v1 as components
 
 st.markdown("https://app.powerbi.com/links/my5rQKhiQL?ctid=07acb355-56bc-489b-b98c-8fea440460e8&pbi_source=linkShare&bookmarkGuid=3ab7991c-d111-4774-bcbf-e2a4380e2d4f",unsafe_allow_html=True)
+
 col1, col2= st.columns(2)
 with col1:
   st.image("Sales_Report (3)-1.png")

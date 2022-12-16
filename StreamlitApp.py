@@ -241,7 +241,7 @@ st.header('Sales Management Dashboard')
 st.write("""The finished sales management dashboard with one page with works as a dashboard and overview, with two other pages focused on combining tables for necessary details and visualizations to show sales over time, per customers and per products.""")
 st.write("**Click the picture to to open the dashboard and try it out!**")
 
-st.components.html
+
 import streamlit.components.v1 as components
 
 # bootstrap 4 collapse example

@@ -69,7 +69,5 @@ data = {'As a (role)': ['Sales Manager', 'Sales Representative', 'Sales Represen
 df = pd.DataFrame(data)
 st.dataframe(df)
                    
-                   
-    col1, col2 = st.columns(2)
 
     

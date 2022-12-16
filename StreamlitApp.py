@@ -3,7 +3,7 @@ from io import StringIO
 import sys
 from PIL import Image
 import pandas as pd
-from st_aggrid import GridOptionsBuilder, AgGrid
+
 
 st.set_page_config(page_title='Data Analyst Portfolio Project – Sales Management',page_icon="📶",layout="wide")
 

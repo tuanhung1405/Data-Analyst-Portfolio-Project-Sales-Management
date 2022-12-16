@@ -55,8 +55,18 @@ st.write('---')
     
     # Store the initial value of widgets in session state
     
-images = ['Sales_Report (3)-1.png', 'Sales_Report (3)-2.png', 'pic1.png', 'pic2.png', 'pic3.png', 'datamodel-1.png']
-st.image(images, use_column_width=True)
+
+col1, col2, col3 = st.columns(3)
+with col1:
+   st.image("Sales_Report (3)-1.png")
+
+with col2:
+   st.image("pic1.png")
+
+with col3
+   st.image("pic2.png")
+
+
          
         
 st.header('Business Request & User Stories')

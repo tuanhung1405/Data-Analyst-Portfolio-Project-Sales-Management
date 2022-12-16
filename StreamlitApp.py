@@ -47,6 +47,19 @@ st.markdown(original_title, unsafe_allow_html=True)
 
 
 st.markdown("This is a project of **Nguyen Tuan Hung** from **UEL** that aims to build a web application to forecast the trend of coin prices using the ARIMA model. The data was crawled from API of Coinbase. You can use the model however you want, but you carry the risk for your actions.")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+   st.write('')
+
+with col2:
+   st.header("Nguyen Tuan Hung")
+   st.image("Nguyễn Tuấn Hưng_ Ảnh chân dung.png")
+
+with col3:
+   st.write('')
+
+
 
 st.write('---')
     #st.sidebar.write("Choose your coin and the period")
@@ -56,14 +69,16 @@ st.write('---')
     # Store the initial value of widgets in session state
     
 
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
    st.image("Sales_Report (3)-1.png")
 with col2:
+   st.image("Sales_Report (3)-2.png")
+with col3:
    st.image("pic1.png")
-with col3:
+with col4:
    st.image("pic2.png")
-with col3:
+with col5:
    st.image("pic3.png")
 
 

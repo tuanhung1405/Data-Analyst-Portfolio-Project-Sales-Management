@@ -131,7 +131,7 @@ SELECT
 FROM 
  [AdventureWorksDW2019].[dbo].[DimDate]
 WHERE 
-  CalendarYear >= 2019'''
+  CalendarYear >= 2020'''
 st.code(code, language='sql')
 
 st.subheader('DIM_Customers:')

@@ -56,7 +56,7 @@ with col1:
    st.write('')
 
 with col2:
-   st.header("Nguyen Tuan Hung")
+   st.header("Mr. Nguyen Tuan Hung")
    st.image("Nguyễn Tuấn Hưng_ Ảnh chân dung.png")
 
 with col3:
